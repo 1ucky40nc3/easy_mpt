@@ -1,0 +1,14 @@
+services:
+  langchain-chat-nextjs:
+    build:
+      context: ./langchain-chat-nextjs
+      target: deps
+    command: npm run dev
+    ports:
+      - '3000:3000'
+    environment:
+      - NODE_ENV=development
+    volumes:
+      - ./langchain-chat-nextjs:/app
+      - /app/node_modules
+      - /app/.next
