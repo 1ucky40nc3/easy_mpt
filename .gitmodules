@@ -1,3 +1,6 @@
 [submodule "ggml"]
 	path = ggml
 	url = https://github.com/ggerganov/ggml.git
+[submodule "langchain-chat-nextjs"]
+	path = langchain-chat-nextjs
+	url = https://github.com/1ucky40nc3/langchain-chat-nextjs.git
